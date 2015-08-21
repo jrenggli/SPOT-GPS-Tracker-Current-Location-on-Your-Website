@@ -27,6 +27,14 @@ Edit the file, to add your spot_id and file paths, then:
 
 Just run `spotparse.py -k -m >/dev/null` from cron (every 15 minutes at most), and it will generate a map.
 
+installation on Mac OS X
+------------------------
+Python is already installed by default. But you need to manually install some python packages:
+
+```
+sudo easy_install simplejson pygmaps
+```
+
 background
 ----------
 If you subscribe to the Track Progress service with SPOT, you can tell the GPS device to send your location to SPOT via satellite every 10 minutes, and then export those tracks at a later time.
